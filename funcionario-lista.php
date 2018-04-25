@@ -8,6 +8,7 @@
 
     <table class="table table-striped table-bordered meio">
     <h1>LISTA DE FUNCIONÁRIOS</h1>
+    <br>
     <tr>
         <td>Sobrenome</td>
         <td>Nome</td>
@@ -45,6 +46,7 @@
         <td><?=$funcionario["extensao"]?></td>
         <td><?=$funcionario["notas"]?></td>
         <td><?=$funcionario["reportase"]?></td>
+     
         </tr>
     </tr>
     <?php 

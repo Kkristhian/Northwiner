@@ -9,6 +9,8 @@
     $funcionarios = $func->buscarFuncionarios();
     $regioes = $reg->listaRegioes();
 ?>
+    <h1>CADASTRO DE FUNCIONÁRIO</h1>
+    <br>
     <form action="cadastro-funcionario.php" method="post">
         <div class="col-md-6">
             <div class="form-group">
