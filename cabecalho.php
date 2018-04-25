@@ -19,6 +19,7 @@
                     <li><a href="cadastro-funcionario-form.php">Cadastro de Funcionário</a></li>
                     <li><a href="cadastro-regiao-form.php">Cadastro Região</a></li>
                     <li><a href="funcionario-lista.php">Lista Funcionários</a></li>
+                    <li><a href="regiao-lista.php">Lista Regiões</a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </div>
