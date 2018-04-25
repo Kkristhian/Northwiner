@@ -2,7 +2,7 @@
     include_once('cabecalho.php');
     include_once('conecta.php');
     include_once('funcionario-database.php');
-    $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","minhaloja","essaeminhasenha","minhaloja");
+    $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $func = new Funcionario($conexao);
 ?>
 
