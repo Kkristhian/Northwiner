@@ -1,9 +1,12 @@
-<?php
+<?php 
     include_once('cabecalho.php');
     include_once('conecta.php');
     include_once('funcionario-database.php');
+    $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","minhaloja","essaeminhasenha","minhaloja");
+    $func = new Funcionario($conexao);
 ?>
-    <table class="table table-striped table-bordered">
+
+    <table class="table table-striped table-bordered meio">
     <h1>LISTA DE FUNCIONÁRIOS</h1>
     <tr>
         <td>Sobrenome</td>
@@ -23,7 +26,7 @@
         <td>Reportase a</td>
     </tr>
     <?php
-        $funcionarios = listaFuncionario($conexao);
+        $funcionarios = $func->listaFuncionario();
         foreach ($funcionarios as $funcionario):
     ?>
     <tr>

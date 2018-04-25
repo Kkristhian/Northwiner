@@ -1,10 +1,11 @@
 <?php
-
-    $host = 'cloud.matheusmiliorini.com.br';
-    $user = 'northwind';
-    $pass = 'essaeminhasenha';
-    $dbname = 'northwind';
-
-    $conexao = mysqli_connect($host,$user,$pass,$dbname);
-
+    class BancoDeDados {
+        private $con;
+        public function __construct($host,$user,$pass,$db) {
+            $this->con = mysqli_connect($host,$user,$pass,$db);
+        }
+        public function getCon() {
+            return $this->con;
+        }
+    } 
 ?>

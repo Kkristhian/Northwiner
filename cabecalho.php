@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TESTE BANCO DE DADOS</title>
+    <title>North Winer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/loja.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/loja.css" />
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">    
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="index.php" class="navbar-brand">PÁGINA INICIAL</a>
+                <a href="index.php" class="navbar-brand">North Wind</a>
             </div>
             <div>
                 <ul class="nav navbar-nav">
-                    <li><a href="funcionario-form.php">Cadastrar Funcionário</a></li>
-                    <li><a href="funcionario-lista.php">Lista Funcionarios</a></li>
+                    <li><a href="cadastro-funcionario-form.php">Cadastro de Funcionário</a></li>
+                    <li><a href="cadastro-regiao-form.php">Cadastro Região</a></li>
+                    <li><a href="funcionario-lista.php">Lista Funcionários</a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </div>
         </div>
