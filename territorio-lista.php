@@ -9,13 +9,20 @@
     <table class="table table-striped table-bordered meio">
     <h1>LISTA TERRITÓRIOS</h1>
     <br>
+    <tr>
+        <td>IDTerritorio</td>
+        <td>DescricaoTerritorio</td>
+        <td>IDRegiao</td>
+    </tr>
   
     <?php
         $territorios = $Ter->listaTerritorio();
         foreach ($territorios as $territorio):
     ?>
     <tr>
+        <td><?=$territorio["IDTerritorio"]?></td>
         <td><?=$territorio["DescricaoTerritorio"]?></td>
+        <td><?=$territorio["IDRegiao"]?></td>
     </tr>
     </tr>
     <?php 
