@@ -10,7 +10,6 @@
     <h1>LISTA DE FUNCIONÁRIOS</h1>
     <br>
     <tr>
-        
         <td>Nome</td>
         <td>Sobrenome</td>
         <td>Titulo</td>
@@ -32,7 +31,6 @@
         foreach ($funcionarios as $funcionario):
     ?>
     <tr>
-        
         <td><?=$funcionario["nome"]?></td>
         <td><?=$funcionario["sobrenome"]?></td>
         <td><?=$funcionario["titulo"]?></td>
