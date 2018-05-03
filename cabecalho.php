@@ -20,11 +20,8 @@
                     <li><a href="funcionario-lista.php">Lista Funcionários</a></li>
                     <li><a href="cadastro-regiao-form.php">Cadastro Região</a></li>
                     <li><a href="regiao-lista.php">Lista Regiões</a></li>
-                    <!--<li><a href="cadastro-territorio-form.php">Cadastro Territórios</a></li>-->
+                    <li><a href="cadastro-territorio-form.php">Cadastro Territórios</a></li>
                     <li><a href="territorio-lista.php">Lista Territórios</a></li>
-                    <!--<li><a href="cadastro-transportadora-form.php">Cadastro Transportadora</a></li>-->
-                    <li><a href="transportadora-lista.php">Lista Transportadora</a></li>
-                    <li><a href="#"></a></li>
                 </ul>
             </div>
         </div>

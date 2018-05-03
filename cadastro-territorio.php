@@ -5,7 +5,7 @@
     $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $Ter = new Territorio($conexao);
 
-    $sucesso = $Ter->addTerritorio($_POST['nome']);
+    $sucesso = $Ter->addTerritorio($_POST['IDTerritorio'],$_POST['DescricaoTerritorio'],$_POST['IDRegiao']);
     if ($sucesso) {
         header('Location:index.php');
     } else {
