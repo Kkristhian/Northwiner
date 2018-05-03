@@ -1,7 +1,9 @@
 {
     "name": "kristhian/northwiner",
-    "description": "teste",
     "type": "project",
+    "require": {
+        "twbs/bootstrap": "^4.1"
+    },
     "require-dev": {
         "twbs/bootstrap": "^4.1"
     },
@@ -10,6 +12,5 @@
             "name": "Kkristhian",
             "email": "kristhianluz@hotmail.com"
         }
-    ],
-    "require": {}
+    ]
 }

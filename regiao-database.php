@@ -8,6 +8,15 @@
             $sql = "INSERT INTO regiao(DescricaoRegiao) VALUES('$nome')";
             return mysqli_query($this->conexao,$sql);
         }
+        function buscaRegioes() {
+            $regioes = array();
+            $sql = "SELECT * FROM regiao";
+            $query = mysqli_query($this->conexao,$sql);
+            while($row = mysqli_fetch_assoc($query)) {
+                array_push($regioes,$row);
+            }
+            return $regioes;
+        }
         function listaRegioes() {
             $regioes = array();
             $sql = "SELECT * FROM regiao";
