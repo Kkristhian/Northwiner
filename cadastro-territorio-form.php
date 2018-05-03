@@ -18,7 +18,7 @@
             <label for="DescricaoTerritorio">Descrição Território:</label>
             <input type="text" name="DescricaoTerritorio" id="DescricaoTerritorio" required class="form-control" placeholder="DescricaoTerritorio">
         </div>
-        <div class="col-md-3">
+        
             <div class="form-group">
                 <label for="regiao">ID Região</label>
                 <select name="IDRegiao" id="IDRegiao" class="form-control">
@@ -27,7 +27,7 @@
                     <?php endforeach; ?>
                 </select>
             </div>
-        </div>
+        
         <div class="form-group">
             <button type="submit" class="btn btn-success totalwidth">Submit</button>
         </div>

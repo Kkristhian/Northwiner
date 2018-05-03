@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>North Wind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css\bootstrap.min" />
-    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\js\bootstrap.min" />
+    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css\bootstrap" />
+    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css\loja" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a href="index.php" class="navbar-brand">North Wind</a>
+                <a href="index.php" class="navbar-brand"><h1>NORTH WIND</h1></a>
             </div>
             <div>
                 <ul class="nav navbar-nav">
