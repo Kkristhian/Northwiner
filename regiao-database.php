@@ -17,6 +17,14 @@
             }
             return $regioes;
         }
+        function alteraRegiao($IDRegiao,$DescricaoRegiao){
+            $query = "UPDATE regiao set IDRegiao = '{$IDRegiao}',DescricaoRegiao = {$DescricaoRegiao} where id={$id}";
+            return mysqli_query($this->conexao, $query);
+        }
+        function removeRegiao($id) {
+            $query = "DELETE FROM regiao WHERE id='$id'";
+            return mysqli_query($this->conexao,$query);
+        }
         function listaRegioes() {
             $regioes = array();
             $sql = "SELECT * FROM regiao";

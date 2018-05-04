@@ -6,7 +6,7 @@
     <title>North Wind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css\bootstrap" />
-    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css\loja" />
+    <link rel="stylesheet" type="text/css" media="screen" href="vendor\twbs\bootstrap\dist\css" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

@@ -21,6 +21,14 @@
             }
             return $funcionarios;
         }
+        function alterafuncionario($nome,$sobrenome,$titulo,$titulocortesia,$datanascimento,$dataadmissao,$endereco,$cidade,$regiao,$cep,$pais,$telefoneresidencial,$extensao,$notas,$reportase){
+            $query = "UPDATE funcionarios set sobrenome = '{$sobrenome}',nome = {$nome}, titulo = '{$titulo}', tituloCortesia = '{$tituloCortesia}', datanac = '{$dataNac}',dataAdmissao = '{$dataAdmissao}', endereco = '{$endereco}', cidade = '{$cidade}', regiao = '{$regiao}', cep = '{$cep}', pais = '{$pais}', telefoneResidencial = '{$telefoneResidencial}', extensao = '{$extensao}', notas = '{$notas}', reportarse = '{$reportase} where id={$id}";
+            return mysqli_query($this->conexao, $query);
+        }
+        function removeFuncionario($id) {
+            $query = "DELETE FROM funcionarios WHERE id='$id'";
+            return mysqli_query($this->conexao,$query);
+        }
 
         function buscarFuncionarios() {
             $funcionarios = array();

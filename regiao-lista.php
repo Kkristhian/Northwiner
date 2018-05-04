@@ -21,7 +21,10 @@
     <tr>
         <td><?=$regiao["IDRegiao"]?></td>
         <td><?=$regiao["DescricaoRegiao"]?></td>
-        </tr>
+        <td>
+           <!-- <a href="regiao-update-form.php?id=<?=$regiao['id']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a> -->
+           <!-- <a href="regiao-delete.php?id=<?=$regiao['id']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a> -->
+        </td>
     </tr>
     <?php 
         endforeach;

@@ -46,7 +46,10 @@
         <td><?=$funcionario["extensao"]?></td>
         <td><?=$funcionario["notas"]?></td>
         <td><?=$funcionario["reportase"]?></td>
-     
+        <td>
+           <!-- <a href="funcionario-update-form.php?id=<?=$funcionario['id']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a> -->
+           <!--<a href="funcionario-delete-confirma.php?id=<?=$funcionario['id']?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a> -->
+        </td>
         </tr>
     </tr>
     <?php 
