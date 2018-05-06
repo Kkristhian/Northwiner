@@ -8,10 +8,10 @@
     $sucesso = $reg->buscaRegioes($_GET['IDRegiao']);
 ?>
 
-    <h1 class="meio">Você deseja realmente excluir a região "<?=$regiao[0]['IDRegiao']?>"?</h1>
+    <h1 class="meio">Você deseja realmente excluir a região "<?=$_GET['IDRegiao']?>"?</h1>
     <br><br>
     <form action="regiao-delete.php" method="POST">
-        <input type="hidden" name="IDRegiao" value="<?=$regiao[0]['IDRegiao']?>">
+        <input type="hidden" name="IDRegiao" value="<?=$_GET['IDRegiao']?>">
         <div class="form-group">
             <button type="submit" class="btn btn-danger totalwidth" >Excluir</button>
         </div>

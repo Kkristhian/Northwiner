@@ -22,7 +22,7 @@
             return mysqli_query($this->conexao, $query);
         }
         function removeTerritorio($IDTerritorio) {
-            $query = "DELETE FROM territorios WHERE id='$IDTerritorio'";
+            $query = "DELETE FROM territorios WHERE IDTerritorio='$IDTerritorio'";
             return mysqli_query($this->conexao,$query);
         }
         function listaTerritorio() {

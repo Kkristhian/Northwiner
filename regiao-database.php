@@ -4,8 +4,8 @@
         function __construct($conexao) {
             $this->conexao = $conexao->getCon();
         }
-        function addRegiao($DescricaoRegiao) {
-            $sql = "INSERT INTO regiao (DescricaoRegiao) VALUES('$DescricaoRegiao')";
+        function addRegiao($IDRegiao,$DescricaoRegiao) {
+            $sql = "INSERT INTO regiao (IDRegiao,DescricaoRegiao) VALUES('$IDRegiao','$DescricaoRegiao')";
             return mysqli_query($this->conexao,$sql);
         }
         function buscaRegioes() {

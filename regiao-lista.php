@@ -23,7 +23,7 @@
         <td><?=$regiao['DescricaoRegiao']?></td>
         <td>
            <a href="regiao-update-form.php?IDRegiao=<?=$regiao['IDRegiao']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh">Update</span></a>
-           <a href="regiao-delete-confirma.php?IDRegiao=<?=$regiao['IDRegiao']?>" class="btn btn-primary"><span class="glyphicon glyphicon-remove">Excluir</span></a>
+           <a href="regiao-delete-confirma.php?IDRegiao=<?=$regiao['IDRegiao']?>"class="btn btn-danger"><span class="glyphicon glyphicon-remove">Excluir</span></a>
         </td>
     </tr>
     <?php 

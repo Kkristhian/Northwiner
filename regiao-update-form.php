@@ -10,11 +10,11 @@
     <form action="regiao-update.php" method="POST">
         <div class="form-group">
             <label for="IDRegiao">ID Região:</label>
-            <input type="number" name="IDRegiao" id="IDRegiao"  class="form-control" value="<?=$regiao[0]['IDRegiao']?>">
+            <input type="number" name="IDRegiao" id="IDRegiao"  class="form-control" value="<?=$_GET['IDRegiao']?>">
         </div>
         <div>
             <label for="DescricaoRegiao">Descrição Região:</label>
-            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" required class="form-control" value="<?=$regiao[0]['DescricaoRegiao']?>">
+            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" required class="form-control" value="<?=$_GET['DescricaoRegiao']?>">
         </div>
         
         <div class="form-group">

@@ -10,10 +10,10 @@
     
 
 
-    <h1 class="meio">Você deseja realmente excluir o territorio "<?=$territorio[0]['IDTerritorio']?>"?</h1>
+    <h1 class="meio">Você deseja realmente excluir o territorio "<?=$_GET['IDTerritorio']?>"?</h1>
     <br><br>
     <form action="territorio-delete.php" method="POST">
-        <input type="hidden" name="IDTerritorio" value="<?=$territorio[0]['IDTerritorio']?>">
+        <input type="hidden" name="IDTerritorio" value="<?=$_GET['IDTerritorio']?>">
         <div class="form-group">
             <button type="submit" class="btn btn-danger totalwidth" >Excluir</button>
         </div>
