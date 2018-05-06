@@ -12,7 +12,7 @@
     <form action="cadastro-territorio.php" method="POST">
         <div class="form-group">
             <label for="nome">ID Território:</label>
-            <input type="number" name="IDTerritorio" id="IDTerritorio" required class="form-control" placeholder="IDTerritorio">
+            <input type="number" name="IDTerritorio" id="IDTerritorio"  class="form-control" placeholder="IDTerritorio">
         </div>
         <div>
             <label for="DescricaoTerritorio">Descrição Território:</label>

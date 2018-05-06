@@ -18,11 +18,11 @@
             return $territorios;
         }
         function alteraTerritorio($IDTerritorio,$DescricaoTerritorio,$IDRegiao){
-            $query = "UPDATE territorios set IDTerritorio = '{$IDTerritorio}',DescricaoTerritorio = {$DescricaoTerritorio}, IDRegiao = '{$IDRegiao} where id={$id}";
+            $query = "UPDATE territorios set IDTerritorio = '{$IDTerritorio}',DescricaoTerritorio = {$DescricaoTerritorio}, IDRegiao = '{$IDRegiao} where IDTerritorio={$IDTerritorio}";
             return mysqli_query($this->conexao, $query);
         }
-        function removeTerritorio($id) {
-            $query = "DELETE FROM territorios WHERE id='$id'";
+        function removeTerritorio($IDTerritorio) {
+            $query = "DELETE FROM territorios WHERE id='$IDTerritorio'";
             return mysqli_query($this->conexao,$query);
         }
         function listaTerritorio() {

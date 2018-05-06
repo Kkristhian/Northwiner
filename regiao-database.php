@@ -4,8 +4,8 @@
         function __construct($conexao) {
             $this->conexao = $conexao->getCon();
         }
-        function addRegiao($nome) {
-            $sql = "INSERT INTO regiao(DescricaoRegiao) VALUES('$nome')";
+        function addRegiao($DescricaoRegiao) {
+            $sql = "INSERT INTO regiao (DescricaoRegiao) VALUES('$DescricaoRegiao')";
             return mysqli_query($this->conexao,$sql);
         }
         function buscaRegioes() {
@@ -18,11 +18,11 @@
             return $regioes;
         }
         function alteraRegiao($IDRegiao,$DescricaoRegiao){
-            $query = "UPDATE regiao set IDRegiao = '{$IDRegiao}',DescricaoRegiao = {$DescricaoRegiao} where id={$id}";
+            $query = "UPDATE regiao set IDRegiao = '{$IDRegiao}',DescricaoRegiao = {$DescricaoRegiao} where IDRegiao={$IDRegiao}";
             return mysqli_query($this->conexao, $query);
         }
-        function removeRegiao($id) {
-            $query = "DELETE FROM regiao WHERE id='$id'";
+        function removeRegiao($IDRegiao) {
+            $query = "DELETE FROM regiao WHERE IDRegiao='$IDRegiao'";
             return mysqli_query($this->conexao,$query);
         }
         function listaRegioes() {
