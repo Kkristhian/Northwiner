@@ -6,7 +6,7 @@
     $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $func = new Funcionario($conexao);
 
-    $id = $_POST['id'];
+    $id = $_POST['IDFuncionario'];
     $sobrenome = $_POST['sobrenome'];
     $nome = $_POST['nome'];
     $titulo = $_POST['titulo'];
@@ -23,7 +23,7 @@
     $notas = $_POST['notas'];
     $reportarse = $_POST['reportase'];
 
-    $sucesso = $func->alteraFuncionario($nome,$sobrenome,$titulo,$titulocortesia,$datanascimento,$dataadmissao,$endereco,$cidade,$regiao,$cep,$pais,$telefoneresidencial,$extensao,$notas,$reportase);
+    $sucesso = $func->alteraFuncionario($IDFuncionario,$nome,$sobrenome,$titulo,$titulocortesia,$datanascimento,$dataadmissao,$endereco,$cidade,$regiao,$cep,$pais,$telefoneresidencial,$extensao,$notas,$reportase);
 ?>
 
     <div class="meio">

@@ -5,7 +5,7 @@
 
     $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $reg = new Regiao($conexao);
-    $regioes = $reg->listaRegioes();
+    $regioes = $reg->buscaRegioes($_GET['IDRegiao']);
 ?>
     <form action="regiao-update.php" method="POST">
         <div class="form-group">
@@ -14,7 +14,7 @@
         </div>
         <div>
             <label for="DescricaoRegiao">Descrição Região:</label>
-            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" required class="form-control" value="<?=$_GET['DescricaoRegiao']?>">
+            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" class="form-control" value="<?=$_GET['DescricaoRegiao']?>">
         </div>
         
         <div class="form-group">

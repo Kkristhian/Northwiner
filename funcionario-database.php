@@ -11,10 +11,9 @@
         
             return $query;
         }
-
         function listaFuncionario(){
             $funcionarios = array();
-            $resultado = mysqli_query($this->conexao, "SELECT sobrenome, nome, titulo, tituloCortesia, dataNac, dataAdmissao, endereco, cidade, regiao, cep, pais, telefoneResidencial, extensao, notas,reportase FROM funcionarios");
+            $resultado = mysqli_query($this->conexao, "SELECT IDFuncionario, sobrenome, nome, titulo, tituloCortesia, dataNac, dataAdmissao, endereco, cidade, regiao, cep, pais, telefoneResidencial, extensao, notas,reportase FROM funcionarios");
            
             while ($linha = mysqli_fetch_assoc($resultado)) {
                 array_push($funcionarios,$linha);
@@ -25,11 +24,10 @@
             $query = "UPDATE funcionarios set sobrenome = '{$sobrenome}',nome = {$nome}, titulo = '{$titulo}', tituloCortesia = '{$tituloCortesia}', datanac = '{$dataNac}',dataAdmissao = '{$dataAdmissao}', endereco = '{$endereco}', cidade = '{$cidade}', regiao = '{$regiao}', cep = '{$cep}', pais = '{$pais}', telefoneResidencial = '{$telefoneResidencial}', extensao = '{$extensao}', notas = '{$notas}', reportarse = '{$reportase} where id={$id}";
             return mysqli_query($this->conexao, $query);
         }
-        function removeFuncionario($id) {
-            $query = "DELETE FROM funcionarios WHERE id='$id'";
+        function removeFuncionario($IDFuncionario) {
+            $query = "DELETE FROM funcionarios WHERE IDFuncionario='$IDFuncionario'";
             return mysqli_query($this->conexao,$query);
         }
-
         function buscarFuncionarios() {
             $funcionarios = array();
             

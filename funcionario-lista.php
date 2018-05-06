@@ -10,6 +10,7 @@
     <h1>LISTA DE FUNCIONÁRIOS</h1>
     <br>
     <tr>
+        <td>ID</td>
         <td>Nome</td>
         <td>Sobrenome</td>
         <td>Titulo</td>
@@ -31,6 +32,7 @@
         foreach ($funcionarios as $funcionario):
     ?>
     <tr>
+        <td><?=$funcionario['IDFuncionario']?></td>
         <td><?=$funcionario["nome"]?></td>
         <td><?=$funcionario["sobrenome"]?></td>
         <td><?=$funcionario["titulo"]?></td>
@@ -47,8 +49,8 @@
         <td><?=$funcionario["notas"]?></td>
         <td><?=$funcionario["reportase"]?></td>
         <td>
-           <!-- <a href="funcionario-update-form.php?id=<?=$funcionario['id']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></a> -->
-           <!--<a href="funcionario-delete-confirma.php?id=<?=$funcionario['id']?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a> -->
+           <a href="funcionario-update-form.php?IDFuncionario=<?=$funcionario['IDFuncionario']?>" class="btn btn-primary"><span class="glyphicon glyphicon-refresh">Update</span></a> 
+           <a href="funcionario-delete-confirma.php?IDFuncionario=<?=$funcionario['IDFuncionario']?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove">Excluir</span></a>
         </td>
         </tr>
     </tr>

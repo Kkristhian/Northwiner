@@ -6,7 +6,7 @@
     $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $ter = new Territorio($conexao);
     $reg = new Regiao($conexao);
-    $territorios = $ter->buscaTerritorio($GET_['IDTerritorio']);
+    $territorios = $ter->buscaTerritorio($_GET['IDTerritorio']);
     $regioes = $reg->listaRegioes();
 ?>
     <form action="territorio-update.php" method="POST">
