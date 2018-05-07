@@ -18,7 +18,7 @@
             return $regioes;
         }
         function alteraRegiao($IDRegiao,$DescricaoRegiao){
-            $query = "UPDATE regiao set IDRegiao = '{$IDRegiao}',DescricaoRegiao = {$DescricaoRegiao} where IDRegiao={$IDRegiao}";
+            $query = "UPDATE regiao set IDRegiao = '{$IDRegiao}',DescricaoRegiao = '{$DescricaoRegiao}' where IDRegiao='{$IDRegiao}'";
             return mysqli_query($this->conexao, $query);
         }
         function removeRegiao($IDRegiao) {

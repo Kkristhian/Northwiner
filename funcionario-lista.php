@@ -10,7 +10,7 @@
     <h1>LISTA DE FUNCIONÁRIOS</h1>
     <br>
     <tr>
-        <td>ID</td>
+        <td>ID Funcionário</td>
         <td>Nome</td>
         <td>Sobrenome</td>
         <td>Titulo</td>

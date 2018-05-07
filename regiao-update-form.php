@@ -14,9 +14,9 @@
         </div>
         <div>
             <label for="DescricaoRegiao">Descrição Região:</label>
-            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" class="form-control" value="<?=$_GET['DescricaoRegiao']?>">
+            <input type="text" name="DescricaoRegiao" id="DescricaoRegiao" class="form-control">
         </div>
-        
+        <br>
         <div class="form-group">
             <button type="submit" class="btn btn-success totalwidth">Submit</button>
         </div>

@@ -5,7 +5,11 @@
     
     $conexao = new BancoDeDados("cloud.matheusmiliorini.com.br","northwind","essaeminhasenha","northwind");
     $func = new Funcionario($conexao);
-    $sucesso = $func->removeFuncionario($_POST['nome']);
+    $sucesso = $func->removeFuncionario($_POST['IDFuncionario']);
+
+    if (!$sucesso) {
+        echo mysqli_error($conexao->getCon());
+    }
 ?>
     <div class="meio">
         <?php if($sucesso): ?>

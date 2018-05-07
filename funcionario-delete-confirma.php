@@ -11,7 +11,7 @@
     <h1 class="meio">Você deseja realmente excluir o funcionario "<?=$_GET['IDFuncionario']?>"?</h1>
     <br><br>
     <form action="funcionario-delete.php" method="POST">
-        <input type="hidden" name="nome" value="<?=$_GET['IDFuncionario']?>">
+        <input type="hidden" name="IDFuncionario" value="<?=$_GET['IDFuncionario']?>">
         <div class="form-group">
             <button type="submit" class="btn btn-danger totalwidth" >Excluir</button>
         </div>
